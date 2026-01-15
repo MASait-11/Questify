@@ -1,0 +1,101 @@
+/*
+ * Goals Page Styles
+ * Styling for goal creation form and goals list.
+ */
+
+.create-goal-section {
+  margin-bottom: 30px;
+}
+
+.create-goal-btn {
+  background: #667eea;
+  color: white;
+  padding: 15px 30px;
+  font-size: 16px;
+  font-weight: 600;
+  width: 100%;
+  max-width: 300px;
+  display: block;
+  margin: 0 auto;
+}
+
+.create-goal-form {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.create-goal-form h3 {
+  margin-bottom: 20px;
+  color: #667eea;
+}
+
+.form-buttons {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+  justify-content: center;
+  align-items: center;
+  height: 44px;
+}
+
+.form-buttons button {
+  font-size: 16px;
+  font-weight: 600;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  height: 44px;
+  min-width: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 44px;
+  padding: 0 30px;
+  box-sizing: border-box;
+}
+
+.submit-btn {
+  background: #667eea;
+  color: white;
+}
+
+.submit-btn:hover {
+  background: #5568d3;
+}
+
+.cancel-btn {
+  background: #95a5a6;
+  color: white;
+}
+
+.cancel-btn:hover {
+  background: #7f8c8d;
+}
+
+.goals-container {
+  margin-top: 30px;
+}
+
+.goals-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.empty-state {
+  text-align: center;
+  padding: 60px 20px;
+  color: #7f8c8d;
+}
+
+.empty-state p {
+  font-size: 18px;
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .goals-grid {
+    grid-template-columns: 1fr;
+  }
+}

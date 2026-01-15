@@ -1,0 +1,176 @@
+/* Profile Page Styles */
+
+.profile-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 30px;
+  margin-top: 20px;
+}
+
+.profile-main {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.profile-header {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  padding: 30px;
+}
+
+.profile-avatar {
+  width: 100px;
+  height: 100px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.avatar-emoji {
+  font-size: 3em;
+}
+
+.profile-info {
+  flex: 1;
+}
+
+.profile-info h2 {
+  margin: 0 0 8px 0;
+  font-size: 2em;
+  color: #333;
+}
+
+.profile-email {
+  color: #666;
+  font-size: 1.1em;
+  margin: 0 0 8px 0;
+}
+
+.profile-joined {
+  color: #999;
+  font-size: 0.95em;
+  margin: 0;
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.stat-card {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 20px;
+}
+
+.stat-icon {
+  font-size: 2.5em;
+}
+
+.stat-content h3 {
+  margin: 0 0 8px 0;
+  font-size: 0.95em;
+  color: #666;
+}
+
+.stat-value {
+  margin: 0;
+  font-size: 2em;
+  font-weight: 700;
+  color: #667eea;
+}
+
+.stat-label {
+  margin: 0;
+  color: #999;
+  font-size: 0.9em;
+}
+
+.profile-sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.account-stats {
+  padding: 20px;
+}
+
+.account-stats h3 {
+  margin: 0 0 15px 0;
+}
+
+.account-stats ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.account-stats li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.95em;
+  padding: 8px 0;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.account-stats li:last-child {
+  border-bottom: none;
+}
+
+.account-stats span {
+  color: #666;
+}
+
+.account-stats strong {
+  color: #667eea;
+  font-weight: 600;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .profile-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .stats-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .profile-header {
+    flex-direction: column;
+    text-align: center;
+    gap: 15px;
+  }
+
+  .profile-avatar {
+    width: 80px;
+    height: 80px;
+  }
+
+  .avatar-emoji {
+    font-size: 2.5em;
+  }
+
+  .profile-info h2 {
+    font-size: 1.5em;
+  }
+
+  .stats-grid {
+    grid-template-columns: 1fr;
+  }
+}
